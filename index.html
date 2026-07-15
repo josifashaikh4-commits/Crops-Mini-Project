@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Smart Crop Disease Detection</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4fff4;
+color:#333;
+}
+
+/* Navigation */
+
+nav{
+background:#1b5e20;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:26px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+color:#ffeb3b;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1500&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:800px;
+line-height:1.8;
+}
+
+/* Sections */
+
+section{
+padding:70px 10%;
+}
+
+h2{
+color:#1b5e20;
+margin-bottom:25px;
+font-size:38px;
+}
+
+p{
+font-size:19px;
+line-height:1.8;
+}
+
+/* Features */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-size:22px;
+margin-bottom:15px;
+color:#2e7d32;
+}
+
+/* Mission */
+
+.mission{
+background:#e8f5e9;
+border-left:8px solid green;
+padding:30px;
+border-radius:10px;
+margin-top:30px;
+}
+
+/* Footer */
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+line-height:2;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+flex-direction:column;
+background:#1b5e20;
+position:absolute;
+top:70px;
+right:0;
+width:220px;
+padding:20px;
+}
+
+nav ul.show{
+display:flex;
+}
+
+nav ul li{
+margin:15px 0;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">🌱 AI Crop</div>
+
+<div class="menu-btn" onclick="menu()">☰</div>
+
+<ul id="menu">
+
+<li><a class="active" href="index.html">Home</a></li>
+
+<li><a href="2.html">About</a></li>
+
+<li><a href="3.html">How It Works</a></li>
+
+<li><a href="4.html">Benefits</a></li>
+
+<li><a href="5.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<div class="hero">
+
+<div>
+
+<h1>AI Smart Crop Disease Detection</h1>
+
+<p>
+Smart AI technology that helps farmers detect crop diseases
+quickly, accurately, and efficiently for better farming.
+</p>
+
+</div>
+
+</div>
+
+<!-- Welcome -->
+
+<section>
+
+<h2>Welcome</h2>
+
+<p>
+
+AI Smart Crop Disease Detection is an intelligent web application
+that helps farmers identify crop diseases quickly using Artificial
+Intelligence (AI). Farmers simply upload an image of a plant leaf,
+and the system analyzes it to detect diseases and provide treatment
+suggestions.
+
+<br><br>
+
+This technology reduces crop loss, improves productivity, and
+supports sustainable farming by enabling early disease detection.
+
+</p>
+
+</section>
+
+<!-- Features -->
+
+<section>
+
+<h2>Key Features</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>🌱 Upload Images</h3>
+<p>Upload crop leaf images for AI analysis.</p>
+</div>
+
+<div class="card">
+<h3>🤖 AI Detection</h3>
+<p>Detect plant diseases using Machine Learning.</p>
+</div>
+
+<div class="card">
+<h3>⚡ Instant Results</h3>
+<p>Receive disease prediction within seconds.</p>
+</div>
+
+<div class="card">
+<h3>💊 Treatment</h3>
+<p>Get treatment and prevention recommendations.</p>
+</div>
+
+<div class="card">
+<h3>📊 Dashboard</h3>
+<p>Simple and easy-to-use interface.</p>
+</div>
+
+<div class="card">
+<h3>📱 Mobile Friendly</h3>
+<p>Accessible from smartphones, tablets and PCs.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Mission -->
+
+<section>
+
+<h2>Our Mission</h2>
+
+<div class="mission">
+
+<p>
+
+To empower farmers with smart AI technology that ensures healthy
+crops, increases agricultural productivity, and improves food
+security through accurate disease detection and timely treatment
+recommendations.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>AI Smart Crop Disease Detection</h3>
+
+<p>
+Created By: <strong>Ms. Josifa Shaikh</strong>
+</p>
+
+<p>
+College: <strong>AGCE</strong>
+</p>
+
+<p>
+Course: <strong>AI for Software Development</strong>
+</p>
+
+<p>
+Date: <strong>29/06/26</strong>
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<script>
+
+function menu(){
+
+document.getElementById("menu").classList.toggle("show");
+
+}
+
+</script>
+
+</body>
+</html>

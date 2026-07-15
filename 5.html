@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | AI Smart Crop Disease Detection</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4fff4;
+color:#333;
+}
+
+/* Navigation */
+
+nav{
+background:#1b5e20;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+position:sticky;
+top:0;
+}
+
+.logo{
+color:white;
+font-size:26px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+color:#ffeb3b;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* Header */
+
+.header{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1500&q=80");
+background-size:cover;
+background-position:center;
+height:320px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.header h1{
+font-size:48px;
+}
+
+/* Sections */
+
+section{
+padding:60px 10%;
+}
+
+section h2{
+color:#1b5e20;
+font-size:36px;
+margin-bottom:20px;
+}
+
+section p{
+font-size:19px;
+line-height:1.8;
+}
+
+/* Contact Cards */
+
+.contact-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+/* Conclusion */
+
+.conclusion{
+margin-top:50px;
+background:#e8f5e9;
+padding:30px;
+border-left:8px solid green;
+border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+line-height:2;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:0;
+background:#1b5e20;
+width:220px;
+padding:20px;
+}
+
+nav ul.show{
+display:flex;
+}
+
+nav ul li{
+margin:15px 0;
+}
+
+.menu-btn{
+display:block;
+}
+
+.header h1{
+font-size:34px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🌱 AI Crop</div>
+
+<div class="menu-btn" onclick="menu()">☰</div>
+
+<ul id="menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="2.html">About</a></li>
+
+<li><a href="3.html">How It Works</a></li>
+
+<li><a href="4.html">Benefits</a></li>
+
+<li><a class="5" href="contact.html">Contact</a></li>
+
+
+</ul>
+
+</nav>
+
+<div class="header">
+<h1>Contact & Conclusion</h1>
+</div>
+
+<section>
+
+<h2>Contact Us</h2>
+
+<p>
+If you have questions or need assistance with the AI Smart Crop Disease Detection system,
+feel free to contact us.
+</p>
+
+<div class="contact-box">
+
+<div class="card">
+<h3>📧 Email</h3>
+<p>support@smartcropai.com</p>
+</div>
+
+<div class="card">
+<h3>📞 Phone</h3>
+<p>+91-9876543210</p>
+</div>
+
+<div class="card">
+<h3>🌐 Website</h3>
+<p>www.smartcropai.com</p>
+</div>
+
+</div>
+
+<div class="conclusion">
+
+<h2>Conclusion</h2>
+
+<p>
+
+AI Smart Crop Disease Detection is a modern solution that combines
+Artificial Intelligence with agriculture to identify plant diseases
+quickly and accurately.
+
+The system helps farmers reduce crop losses, improve productivity,
+and increase crop quality by providing instant disease diagnosis
+and treatment recommendations.
+
+With continuous advancements in Artificial Intelligence, this
+technology will play a significant role in promoting sustainable
+farming and ensuring food security for the future.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>AI Smart Crop Disease Detection</h3>
+
+<p><strong>Created By:</strong> Ms. Josifa Shaikh</p>
+
+<p><strong>College:</strong> AGCE</p>
+
+<p><strong>Course:</strong> AI for Software Development</p>
+
+<p><strong>Date:</strong> 29/06/26</p>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function menu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>
